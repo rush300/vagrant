@@ -26,5 +26,8 @@ chkconfig mysql start
 mysql -u root -e "SHOW DATABASES";
 
 # Download starter content
-#
+cd /vagrant
+sudo -u vagrant wget -q https://github.com/rush300/vagrant/tree/main/files/index.html
+sudo -u vagrant wget -q https://github.com/rush300/vagrant/tree/main/files/info.php
+
 service httpd restart
